@@ -4,6 +4,19 @@ export default function Meaning(props) {
   return (
     <div className='Meaning container-fluid'>
       <div className='row'>
+        <div>
+          {props.meaning.synonyms.map(function (synonym, index) {
+            if (index < 5) {
+              return (
+                <span className='p-3' key={index}>
+                  {synonym}
+                </span>
+              );
+            } else {
+              return null;
+            }
+          })}
+        </div>
         <div className='col-sm-12 col-md-2'>
           <h3>{props.meaning.partOfSpeech}</h3>
         </div>
@@ -12,7 +25,6 @@ export default function Meaning(props) {
             return (
               <div key={index}>
                 <div>- {definition.definition}</div>
-
                 <div>
                   <em>{definition.example}</em>
                 </div>
