@@ -4,7 +4,7 @@ export default function Meaning(props) {
   return (
     <div className='Meaning'>
       <div className='row synonyms'>
-        <div className='col-sm-12 col-md-12 text-center mb-3'>
+        <div className='col-sm-12 col-md-12 text-center mt-2 mb-3'>
           {props.meaning.synonyms.map(function (synonym, index) {
             if (index < 5) {
               return (

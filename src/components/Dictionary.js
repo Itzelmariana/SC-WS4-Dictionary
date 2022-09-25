@@ -41,7 +41,7 @@ export default function Dictionary() {
   if (loaded) {
     return (
       <div className='Dictionary'>
-        <h2 className='text-center'>
+        <h2 className='text-center title'>
           <img src={img} alt='dictionary book' width={'24px'} /> Dictionary
         </h2>
         <form onSubmit={handleSubmit} className='text-center'>
