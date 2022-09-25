@@ -6,8 +6,8 @@ export default function Results(props) {
   if (props.results) {
     return (
       <div className='Results'>
-        <h2 className='text-center'>
-          <span>{props.results.word} </span>
+        <h2 className='text-center mb-4 mt-3'>
+          <span className='text-capitalize'>{props.results.word} </span>
           <span>
             {props.results.phonetics.map(function (phonetics, index) {
               const audio = phonetics.audio;
@@ -26,7 +26,7 @@ export default function Results(props) {
               }
             })}
           </span>
-          <span>{props.results.phonetic}</span>
+          <span className='phonetic'>{props.results.phonetic}</span>
         </h2>
 
         {props.results.meanings.map(function (meaning, index) {

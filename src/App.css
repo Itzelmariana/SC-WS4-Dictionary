@@ -1,9 +1,49 @@
-.App-header {
+.App {
   background-color: #f7effb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: 'Quicksand', sans-serif;
+}
+
+section {
+  background: white;
+  border-radius: 12px;
+  padding: 12px 20px 12px 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+.Dictionary {
+  margin-top: 10px;
+}
+.Dictionary img {
+  margin-top: -5px;
+}
+.Dictionary input {
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding-left: 15px;
+  height: 40px;
+  width: 50%;
+  margin-bottom: 15px;
+}
+.Results .phonetic {
+  color: rgb(156, 156, 156);
+}
+.Meaning .synonyms {
+  color: #6572ff;
+}
+.Meaning .example {
+  color: rgb(156, 156, 156);
+}
+.Meaning .partOfSpeech {
+  color: #7782f9;
+}
+.Footer {
+  font-size: 18px;
+  background: #f7effb;
+}
+.Footer a {
+  color: #6e79fa;
 }
